@@ -3,6 +3,7 @@ const statusTranslate = {
   'waiting_active': 'Aguardando Ativação',
   'expirated': 'Expirado',
   'finished': 'Finalizado',
+  'waiting_validations': 'Aguardando Validação',
 }
 
 const typeTranslate = {
