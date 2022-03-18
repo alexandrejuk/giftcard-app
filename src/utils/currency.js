@@ -2,7 +2,7 @@ const parseCurrency = (currencyValue = null) => {
   let value = "R$ 0,00"
   if(currencyValue) {
     const strAmount = String(currencyValue)
-    if(strAmount.length == 1 || strAmount.length == 2) {
+    if(strAmount.length === 1 || strAmount.length === 2) {
       value = `R$ ${strAmount},00`
     }
 
