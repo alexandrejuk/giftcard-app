@@ -1,0 +1,69 @@
+:root {
+  --athens-gray-color: #DFE0EB;
+  --black-color: #000000;
+  --bright-turquoise-color: #13CAE6;
+  --bunting-color: #11183F;
+  --catskill-white-color: #EEF2F6;
+  --gray-90-color: #e5e5e5;
+  --emerald-color: #4ECB71;
+  --indigo-color: #5668D1;
+  --red-color: #FC1100;
+  --white-color: #FFFFFF;
+  --waterloo-color: #757A96;
+}
+
+.loginContainer {
+  align-items: center;
+  background: var(--gray-90-color);
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.cardForm {
+  background: var(--white-color);
+  border: 1px solid var(--athens-gray-color);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 40px;
+  width: 380px;
+}
+
+.formGroup {
+  margin: 20px 0;
+}
+
+.formItem > * {
+  display: flex;
+}
+
+label {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #9FA2B4;
+  width: 100%;
+}
+
+input {
+  margin-top: 5px;
+  background: #FCFDFE;
+  border: 1px solid #F0F1F7;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 11px;
+  width: 100%;
+}
+
+.cardFormHeader {
+  text-align: center;
+}
+
+.textInfo {
+  color: #11183F;
+}

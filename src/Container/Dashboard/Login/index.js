@@ -1,10 +1,9 @@
 import React from 'react'
+import styles from './style.module.css'
 import { 
   Button,
-  Box,
   Grid,
   Group,
-  Text,
   TextInput,
   PasswordInput,
 } from '@mantine/core'
@@ -14,18 +13,15 @@ const Login = ({
   handleSubmit,
 }) => {
   return (
-    <Grid style={{ height: "100vh",  overflow: "hidden", margin: "0" }}>
-      <Grid.Col span={6} style={{ background: "#15aabf" }}>
-        <Box sx={{ maxWidth: 300 }} mx="auto">
-          <Text>Cartões Presentes</Text>
-          <Text size="xs" color="gray">Gerencie e crie seus cartões</Text>
-        </Box>
-      </Grid.Col>
-      <Grid.Col span={6}>
-        <Box sx={{ maxWidth: 300 }} mx="auto">
+    <div className={styles.loginContainer}>
+      <div className={styles.cardForm}>
+        <div className={styles.cardFormHeader}>
+          COMPANY LOGO
+          <h4 className={styles.textInfo}>Acesse o seu painel</h4>
+        </div>
           <form onSubmit={form.onSubmit(handleSubmit)}>
             <Grid>
-              <Grid.Col span={8}>
+              <Grid.Col span={12}>
                 <TextInput 
                   label="Email" 
                   placeholder="Your email" 
@@ -33,7 +29,7 @@ const Login = ({
                   {...form.getInputProps('email')}
                 />
               </Grid.Col>
-              <Grid.Col span={8}>
+              <Grid.Col span={12}>
                 <PasswordInput
                   placeholder=""
                   label="Senha"
@@ -42,16 +38,15 @@ const Login = ({
                   {...form.getInputProps('password')}
                 />
               </Grid.Col>
-              <Grid.Col span={8}>
+              <Grid.Col span={12}>
                 <Group position="right" mt="md">
-                  <Button type="submit">Logar</Button>
+                  <Button fullWidth type="submit">Acessar</Button>
                 </Group>
               </Grid.Col>
             </Grid>
           </form>
-        </Box>
-      </Grid.Col>
-    </Grid>
+      </div>
+    </div>
   )
 }
 
